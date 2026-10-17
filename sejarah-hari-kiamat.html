@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sejarah Panjang Hari Kiamat — Dari Masa ke Masa</title>
+<meta name="description" content="Penelusuran sejarah hari kiamat dari masa ke masa: tanda-tanda yang telah terjadi, era sekarang, tanda-tanda besar yang akan datang, hingga kronologi hari terakhir alam semesta — berdasarkan Al-Qur'an dan hadits shahih."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='80' font-size='85' fill='%23e8c468'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#05070d; --panel:#0e1526; --panel-2:#111a30;
+  --line:rgba(232,196,104,.16); --line-soft:rgba(255,255,255,.07);
+  --gold:#e8c468; --gold-2:#f5d98b;
+  --ink:#eae7de; --muted:#a7b0c0; --faint:#6b7688;
+  --teal:#5fd4c4; --violet:#a48bff; --rose:#ff8f9e;
+  --radius:18px;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'Plus Jakarta Sans','Segoe UI',Arial,sans-serif;
+  --font-arabic:'Amiri','Traditional Arabic','Times New Roman',serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(1000px 620px at 88% -5%, rgba(124,92,246,.09), transparent 60%),
+    radial-gradient(900px 600px at -5% 12%, rgba(232,196,104,.05), transparent 55%),
+    var(--bg);
+  color:var(--ink); font-family:var(--font-body); line-height:1.75; overflow-x:hidden;
+}
+::selection{background:rgba(232,196,104,.3); color:#fff}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#070a12}
+::-webkit-scrollbar-thumb{background:#1c2540; border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#2a3557}
+
+/* ---------- progress bar & nav ---------- */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:120;
+  background:linear-gradient(90deg,var(--gold-deep,#b98a2e),var(--gold),#fff0c0)}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:110;display:flex;justify-content:space-between;align-items:center;
+  padding:15px 40px;background:rgba(5,7,13,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft)}
+.brand{font-family:var(--font-display);font-weight:700;color:var(--gold);letter-spacing:.16em;font-size:13.5px;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.brand em{font-style:normal;color:rgba(232,196,104,.55);margin-right:9px}
+.nav-links{display:flex;gap:26px;flex-wrap:wrap}
+.nav-links a{color:var(--muted);font-size:13px;letter-spacing:.05em;text-decoration:none;transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;padding:130px 24px 90px}
+#stars{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:
+  radial-gradient(60% 50% at 50% 0%, rgba(232,196,104,.10), transparent 62%),
+  radial-gradient(45% 40% at 16% 34%, rgba(124,92,246,.13), transparent 65%),
+  radial-gradient(40% 38% at 84% 28%, rgba(64,120,255,.10), transparent 65%),
+  radial-gradient(70% 55% at 50% 108%, rgba(232,196,104,.07), transparent 60%)}
+.hero-inner{position:relative;z-index:2;max-width:900px}
+.orn{color:var(--gold);letter-spacing:.9em;font-size:15px;margin-bottom:24px;opacity:.75;text-indent:.9em}
+.kicker{font-size:12px;letter-spacing:.36em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.hero h1{font-family:var(--font-display);font-weight:800;font-size:clamp(42px,7vw,84px);line-height:1.07}
+.hero h1 span{display:block;font-style:italic;
+  background:linear-gradient(100deg,#f7e3ab,var(--gold) 45%,#c99f4a);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:var(--muted);font-size:clamp(15px,1.8vw,18px);max-width:660px;margin:28px auto 36px}
+.hero .arabic{font-family:var(--font-arabic);font-size:clamp(22px,3.1vw,33px);color:var(--gold-2);direction:rtl;line-height:2.05}
+.hero .q-attr{font-size:13px;color:var(--faint);margin-top:12px;font-style:italic}
+.stats{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;margin-top:46px}
+.stat{border:1px solid var(--line);background:rgba(14,21,38,.55);backdrop-filter:blur(6px);
+  padding:13px 22px;border-radius:999px;font-size:13.5px;color:var(--muted)}
+.stat b{color:var(--gold);font-weight:600}
+.scroll-cue{display:inline-block;margin-top:54px;color:var(--gold);text-decoration:none;font-size:26px;animation:bob 2.3s ease-in-out infinite;opacity:.85}
+@keyframes bob{50%{transform:translateY(9px)}}
+
+/* ---------- struktur umum ---------- */
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+section{padding:104px 0;scroll-margin-top:70px}
+.divider{display:flex;align-items:center;gap:18px;max-width:1120px;margin:0 auto;padding:0 28px;color:rgba(232,196,104,.55);font-size:14px}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(232,196,104,.25))}
+.divider::after{background:linear-gradient(90deg,rgba(232,196,104,.25),transparent)}
+.eyebrow{display:flex;align-items:center;gap:14px;color:var(--gold);font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;margin-bottom:18px}
+.eyebrow::before{content:"";width:46px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.section-title{font-family:var(--font-display);font-size:clamp(30px,4.4vw,46px);font-weight:700;line-height:1.16;margin-bottom:18px}
+.lead{color:var(--muted);font-size:17px;max-width:790px}
+.prose p{color:#c4c9d4;margin:16px 0;max-width:820px}
+.prose p strong{color:var(--ink);font-weight:600}
+.prose .ar-inline{font-family:var(--font-arabic);color:var(--gold-2)}
+
+/* ---------- kartu jenis kiamat ---------- */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}
+.kind-card{background:linear-gradient(160deg,var(--panel),var(--panel-2));border:1px solid var(--line-soft);border-radius:var(--radius);padding:32px 30px}
+.kind-card .k-tag{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.kind-card h3{font-family:var(--font-display);font-size:23px;margin-bottom:10px}
+.kind-card p{color:var(--muted);font-size:14.5px}
+.kind-card .k-src{display:inline-block;margin-top:16px;font-size:11.5px;color:var(--faint);border:1px solid var(--line-soft);padding:4px 12px;border-radius:999px;letter-spacing:.06em}
+
+/* ---------- grid tanda kecil ---------- */
+.sign-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:18px;margin-top:44px}
+.sign{background:rgba(14,21,38,.66);border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px 24px;transition:transform .35s,border-color .35s}
+.sign:hover{transform:translateY(-5px);border-color:rgba(232,196,104,.42)}
+.sign .s-num{font-family:var(--font-display);font-size:25px;color:rgba(232,196,104,.5);font-weight:700}
+.sign h4{font-size:16px;margin:12px 0 8px;line-height:1.4}
+.sign p{font-size:13.5px;color:var(--muted)}
+.sign .s-src{display:block;margin-top:12px;font-size:11px;color:var(--faint);letter-spacing:.05em}
+</style>
+<style>
+/* ---------- timeline ---------- */
+.timeline{position:relative;margin-top:52px}
+.timeline::before{content:"";position:absolute;left:26px;top:4px;bottom:4px;width:2px;
+  background:linear-gradient(180deg,transparent,rgba(232,196,104,.5) 8%,rgba(232,196,104,.5) 92%,transparent)}
+.t-item{position:relative;padding:0 0 42px 78px}
+.t-item:last-child{padding-bottom:6px}
+.t-dot{position:absolute;left:19px;top:7px;width:16px;height:16px;border-radius:50%;
+  background:var(--bg);border:2px solid var(--gold);box-shadow:0 0 0 5px rgba(232,196,104,.12)}
+.t-year{display:inline-block;font-family:var(--font-display);font-weight:700;color:var(--gold);font-size:18px;margin-bottom:7px}
+.t-card{background:rgba(14,21,38,.7);border:1px solid var(--line-soft);border-radius:var(--radius);padding:26px 28px}
+.t-card h4{font-family:var(--font-display);font-size:20px;margin-bottom:8px}
+.t-card p{color:var(--muted);font-size:14.5px}
+.t-card .t-src{display:inline-block;margin-top:14px;font-size:11px;letter-spacing:.07em;color:var(--faint);border:1px solid var(--line-soft);padding:4px 11px;border-radius:999px}
+.t-tag{position:absolute;right:0;top:9px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;padding:5px 13px;border-radius:999px;white-space:nowrap}
+.tag-done{color:var(--teal);border:1px solid rgba(95,212,196,.35);background:rgba(95,212,196,.07)}
+.tag-now{color:var(--gold);border:1px solid rgba(232,196,104,.4);background:rgba(232,196,104,.07)}
+.tag-future{color:var(--violet);border:1px solid rgba(164,139,255,.35);background:rgba(164,139,255,.07)}
+.tag-eternal{color:var(--rose);border:1px solid rgba(255,143,158,.35);background:rgba(255,143,158,.07)}
+
+/* ---------- 10 tanda besar ---------- */
+.big-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.big{position:relative;background:linear-gradient(165deg,rgba(17,26,48,.92),rgba(14,21,38,.6));
+  border:1px solid var(--line-soft);border-radius:var(--radius);padding:30px 30px 26px;overflow:hidden;
+  transition:border-color .35s,transform .35s}
+.big:hover{border-color:rgba(232,196,104,.4);transform:translateY(-4px)}
+.big::before{content:attr(data-n);position:absolute;top:-22px;right:10px;font-family:var(--font-display);
+  font-size:110px;font-weight:800;color:rgba(232,196,104,.07);line-height:1}
+.big h4{font-family:var(--font-display);font-size:21px;color:var(--gold-2)}
+.big .b-ar{font-family:var(--font-arabic);color:var(--gold);font-size:17px;direction:rtl;display:block;margin:4px 0 2px;opacity:.85}
+.big p{color:var(--muted);font-size:14.3px;margin-top:10px}
+.big .t-src{display:inline-block;margin-top:14px;font-size:11px;letter-spacing:.07em;color:var(--faint);border:1px solid var(--line-soft);padding:4px 11px;border-radius:999px}
+
+/* ---------- kartu sorotan ---------- */
+.note-card{margin-top:54px;border:1px solid rgba(232,196,104,.42);
+  background:linear-gradient(160deg,rgba(232,196,104,.09),rgba(232,196,104,.02));border-radius:var(--radius);padding:38px 36px}
+.note-card h3{font-family:var(--font-display);font-size:26px;color:var(--gold-2);margin-bottom:14px}
+.note-card p{color:#c9cdd8;font-size:14.8px;margin:12px 0}
+.note-card .arabic{font-family:var(--font-arabic);color:var(--gold-2);direction:rtl;font-size:20px;line-height:2;text-align:right;margin:16px 0 4px}
+.note-card .caveat{font-size:12.5px;color:var(--faint);font-style:italic;border-top:1px dashed var(--line);padding-top:16px;margin-top:20px}
+
+/* ---------- akordeon kronologi ---------- */
+.acc{margin-top:48px;border-top:1px solid var(--line-soft)}
+.acc-item{border-bottom:1px solid var(--line-soft)}
+.acc-head{width:100%;display:flex;align-items:center;gap:18px;background:none;border:0;color:var(--ink);
+  padding:25px 6px;cursor:pointer;text-align:left;font-family:inherit;transition:color .3s}
+.acc-head:hover .acc-title{color:var(--gold-2)}
+.acc-num{font-family:var(--font-display);color:var(--gold);font-size:18px;min-width:36px;font-weight:700}
+.acc-title{font-family:var(--font-display);font-size:clamp(17px,2.2vw,21px);flex:1;transition:color .3s}
+.acc-chev{color:var(--gold);transition:transform .35s;font-size:17px}
+.acc-item.open .acc-chev{transform:rotate(180deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .55s ease}
+.acc-inner{padding:2px 6px 28px 60px;color:var(--muted);font-size:14.8px}
+.acc-inner p{margin:11px 0}
+.acc-inner .q{font-family:var(--font-arabic);color:var(--gold-2);direction:rtl;font-size:19.5px;line-height:2.05;margin:15px 0 4px;text-align:right}
+.acc-inner .qt{font-size:12.5px;font-style:italic;color:var(--faint);display:block;margin-bottom:6px}
+.acc-inner .t-src{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.07em;color:var(--faint);border:1px solid var(--line-soft);padding:4px 11px;border-radius:999px}
+
+/* ---------- refleksi & footer ---------- */
+.closing-quote{margin-top:64px;text-align:center;padding:48px 32px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(14,21,38,.5)}
+.closing-quote .q-ar{font-family:var(--font-arabic);font-size:clamp(22px,2.8vw,30px);color:var(--gold-2);direction:rtl;line-height:2.1}
+.closing-quote p{color:var(--muted);margin-top:14px;font-size:14.5px;font-style:italic}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:42px}
+.principle{border-left:2px solid var(--gold);padding:6px 0 6px 22px}
+.principle h4{font-family:var(--font-display);font-size:18px;margin-bottom:8px;color:var(--gold-2)}
+.principle p{font-size:13.8px;color:var(--muted)}
+footer{border-top:1px solid var(--line-soft);padding:58px 0 42px;margin-top:50px}
+.foot-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:44px}
+footer h5{font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+footer p,footer li{font-size:13.3px;color:var(--faint)}
+footer ul{list-style:none}
+footer li{margin:7px 0;padding-left:15px;position:relative}
+footer li::before{content:"—";position:absolute;left:0;color:rgba(232,196,104,.45)}
+.foot-bottom{margin-top:46px;padding-top:22px;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.3px;color:var(--faint)}
+#toTop{position:fixed;right:26px;bottom:26px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);
+  background:rgba(14,21,38,.85);color:var(--gold);cursor:pointer;opacity:0;pointer-events:none;transition:.35s;z-index:100;font-size:17px}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{border-color:var(--gold);transform:translateY(-3px)}
+
+/* ---------- animasi & responsif ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s ease}
+.reveal.visible{opacity:1;transform:none}
+.r1{transition-delay:.08s}.r2{transition-delay:.16s}.r3{transition-delay:.24s}
+@media (max-width:880px){
+  .nav-links{display:none}
+  .two-col,.big-grid,.principles{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:30px}
+  section{padding:80px 0}
+}
+@media (max-width:700px){
+  .timeline::before{left:12px}
+  .t-item{padding-left:48px}
+  .t-dot{left:5px}
+  .t-tag{position:static;display:inline-block;margin:12px 0 0}
+  .acc-inner{padding-left:14px}
+  .topbar{padding:14px 22px}
+  .note-card{padding:30px 24px}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progressBar"></div>
+
+<nav class="topbar">
+  <a class="brand" href="#top"><em>✦</em>As-Sa'ah</a>
+  <div class="nav-links">
+    <a href="#pengantar">Pengantar</a>
+    <a href="#masa-lampau">Masa Lampau</a>
+    <a href="#era-kita">Era Kita</a>
+    <a href="#tanda-besar">Tanda Besar</a>
+    <a href="#hari-itu">Hari Itu</a>
+    <a href="#refleksi">Refleksi</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <canvas id="stars"></canvas>
+  <div class="hero-inner">
+    <div class="orn">✦ ✦ ✦</div>
+    <p class="kicker">Eskatologi Islam · Sebuah Penelusuran dari Masa ke Masa</p>
+    <h1>Sejarah Panjang<br><span>Hari Kiamat</span></h1>
+    <p class="hero-sub">Menelusuri jejak akhir zaman — dari tanda-tanda yang telah berlalu ribuan tahun silam, era yang sedang kita jalani saat ini, hingga peristiwa-peristiwa besar yang akan menyambut hari terakhir alam semesta, sebagaimana diwariskan Al-Qur'an dan hadits-hadits shahih.</p>
+    <div class="arabic">يَسْأَلُونَكَ عَنِ السَّاعَةِ أَيَّانَ مُرْسَاهَا ۖ قُلْ إِنَّمَا عِلْمُهَا عِندَ رَبِّي</div>
+    <p class="q-attr">QS. Al-A'raf: 187 — "Kapan terjadinya? Pengetahuan tentang itu hanya di sisi Tuhanku."</p>
+    <div class="stats">
+      <span class="stat"><b>1.448</b> tahun sejak Hijrah — era terakhir</span>
+      <span class="stat"><b>10</b> tanda besar akhir zaman</span>
+      <span class="stat"><b>3</b> fase zaman: lampau, kini, akan datang</span>
+      <span class="stat"><b>50.000</b> tahun panjang hari perhitungan</span>
+    </div>
+    <a class="scroll-cue" href="#pengantar" aria-label="Gulir ke bawah">▾</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ 01 PENGANTAR ============ -->
+<section id="pengantar">
+  <div class="wrap">
+    <p class="eyebrow reveal">01 — Pengantar</p>
+    <h2 class="section-title reveal">Apa Itu Hari Kiamat?</h2>
+    <div class="prose reveal r1">
+      <p><strong>Hari Kiamat</strong> (<em>Yaumul Qiyamah</em>) adalah hari ketika keseluruhan alam semesta berakhir dan seluruh manusia dibangkitkan untuk dipertanggungjawabkan segala amalnya. Dalam Al-Qur'an, peristiwa agung ini disebut dengan banyak nama — <em>Yaumul Akhir</em> (hari akhir), <em>Yaumul Hisab</em> (hari perhitungan), <em>Yaumul Jaza'</em> (hari balasan), <em>As-Sa'ah</em> (saat yang mengejutkan), <em>Al-Qariah</em> (hari yang menghantam), dan <em>Yaumul Fashl</em> (hari pemisahan). Setiap nama menyoroti satu sisi peristiwa yang luar biasa itu, dan keimanan padanya merupakan rukun iman yang tidak terpisahkan dari keimanan kepada Allah.</p>
+      <p>Dalam tradisi Islam dikenal dua jenis kiamat. <strong>Kiamat sugra</strong> adalah kiamat kecil yang menimpa setiap jiwa ketika ia meninggal dunia — dunia berakhir baginya ketika matanya terpejam untuk terakhir kalinya. Adapun <strong>kiamat kubra</strong> adalah kiamat besar, yakni kehancuran menyeluruh atas alam semesta yang menjadi pokok pembahasan halaman ini. Keduanya bermuara pada satu pertanyaan yang sama, pertanyaan yang bahkan diajukan langsung oleh malaikat Jibril kepada Rasulullah saw.: kapan hari itu akan datang?</p>
+      <p>Jawabannya Allah jaga sendiri. Tidak satu pun makhluk — para nabi sekalipun, apalagi malaikat — mengetahui waktunya. Allah menegaskan dalam QS. Luqman: 34 bahwa ilmu hari kiamat hanya milik-Nya, dan Rasulullah saw. dalam hadits Jibril menyebutkan: "Yang ditanyakan tidak lebih tahu daripada yang bertanya." Karena itu, halaman ini tidak akan mencoba menetapkan tanggal. Yang dapat dilakukan adalah menelusuri <strong>garis waktu</strong>: tanda-tanda yang telah terjadi di masa lampau, tanda-tanda yang sedang berlangsung di era kita, dan tanda-tanda besar yang menurut hadits masih menanti di masa depan.</p>
+      <p>Urutan penyajian berikut mengikuti himpunan para ulama, antara lain Ibnu Katsir dalam <em>An-Nihayah fil Fitan wal Malahim</em> dan Al-Barzanji dalam <em>Al-Isha'ah li Asyrathis Sa'ah</em>. Perlu diketahui bahwa sebagian tanda terjadi secara berurutan yang jelas, sementara sebagian lainnya dapat terjadi bersamaan — para ulama pun berbeda pendapat dalam menatanya. Perbedaan itu wajar, karena yang pasti hanyalah kebenaran terjadinya peristiwa, bukan penanggalannya.</p>
+    </div>
+    <div class="two-col">
+      <div class="kind-card reveal r1">
+        <p class="k-tag">Kiamat Sugra — Kecil</p>
+        <h3>Kiamat bagi Satu Jiwa</h3>
+        <p>Kematian setiap manusia adalah "kiamatnya" masing-masing. Rasulullah saw. bersabda: "Jika salah seorang dari kalian meninggal dunia, maka terpotonglah kiamatnya" (HR. Tirmidzi). Inilah kiamat yang paling dekat dengan setiap kita — dan itulah alasan mengapa kesiapan menghadapinya tidak boleh ditunda.</p>
+      </div>
+      <div class="kind-card reveal r2">
+        <p class="k-tag">Kiamat Kubra — Besar</p>
+        <h3>Kehancuran Alam Semesta</h3>
+        <p>Peristiwa berakhirnya seluruh langit dan bumi dengan tiupan sangkakala, diikuti kebangkitan seluruh makhluk untuk dihisab. Sejarah yang ditelusuri di halaman ini adalah perjalanan panjang menuju hari itu: dari tanda pertama yang telah terjadi hingga tiupan terakhir yang menutup sejarah dunia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">✦</div>
+
+<!-- ============ 02 MASA LAMPAU ============ -->
+<section id="masa-lampau">
+  <div class="wrap">
+    <p class="eyebrow reveal">02 — Masa Lampau</p>
+    <h2 class="section-title reveal">Tanda-Tanda yang Telah Berlalu</h2>
+    <p class="lead reveal r1">Sejarah menuju kiamat sebenarnya telah dimulai sejak sangat lama. Para ulama menjelaskan bahwa tanda-tanda pertama muncul bersamaan dengan kehadiran Rasulullah saw. sendiri — beliau adalah "kiamat pertama" sekaligus gerbang dibukanya babak akhir zaman.</p>
+    <div class="timeline">
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <span class="t-year">±570 M</span><span class="t-tag tag-done">Telah Terjadi</span>
+        <div class="t-card">
+          <h4>Kelahiran Rasulullah saw. — Tahun Gajah</h4>
+          <p>Di Makkah, pada tahun di mana pasukan bergajah digagalkan menyerang Ka'bah, lahirlah Muhammad bin Abdullah — nabi terakhir. Rasulullah saw. bersabda: "Sesungguhnya aku diutus bersama hari kiamat seperti dua jari ini" (HR. Bukhari &amp; Muslim), menunjukkan jarak kedatangan beliau dengan kiamat sedekat jarak telunjuk dengan jari tengah. Dari titik inilah sejarah akhir zaman resmi dibuka.</p>
+          <span class="t-src">HR. Bukhari &amp; Muslim</span>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <span class="t-year">610 M</span><span class="t-tag tag-done">Telah Terjadi</span>
+        <div class="t-card">
+          <h4>Turunnya Wahyu Pertama di Gua Hira</h4>
+          <p>Misi kenabian selama 23 tahun dimulai dengan turunnya QS. Al-'Alaq. Sepanjang masa ini, Rasulullah saw. berulang kali menggambarkan gejala-gejala akhir zaman kepada para sahabat — dari fitnah-fitnah beruntun hingga pertanda-pertanda sosial. Ayat-ayat tentang kiamat turun paling banyak dibanding tema lainnya, menandakan betapa sentralnya hari itu dalam kesadaran umat.</p>
+          <span class="t-src">Awal era kenabian</span>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <span class="t-year">632 M</span><span class="t-tag tag-done">Telah Terjadi</span>
+        <div class="t-card">
+          <h4>Wafatnya Rasulullah saw. — Babak Tanda Dimulai</h4>
+          <p>Wafatnya beliau menandai berakhirnya masa kenabian dan dimulainya masa tanda-tanda. Dalam sebuah hadits disebutkan: "Tidak akan datang kiamat hingga tidak ada lagi di bumi yang mengatakan 'Allah, Allah'" (HR. Muslim) — perjalanan panjang antara wafatnya beliau dan hilangnya kalimat tauhid itulah yang kita tempuh saat ini. Setiap peristiwa setelahnya adalah babak demi babak menuju hari itu.</p>
+          <span class="t-src">HR. Muslim</span>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <span class="t-year">1453 M</span><span class="t-tag tag-done">Telah Terjadi</span>
+        <div class="t-card">
+          <h4>Penaklukan Konstantinopel</h4>
+          <p>Dalam hadits yang diriwayatkan Imam Ahmad disebutkan bahwa tanda kiamat yang pertama adalah penaklukan Konstantinopel. Delapan abad setelah nubuat itu diucapkan, Sultan Muhammad Al-Fatih — pemuda yang digelimang nubuat Rasulullah saw. — membukanya pada usia 21 tahun. Prediksi yang dipenuhi dengan tepat ini menjadi salah satu bukti kuat bahwa tanda-tanda kiamat sungguh-sungguh berjalan sesuai sabda beliau.</p>
+          <span class="t-src">HR. Ahmad — dipenuhi tahun 1453 M</span>
+        </div>
+      </div>
+      <div class="t-item reveal">
+        <span class="t-dot"></span>
+        <span class="t-year">1924 M</span><span class="t-tag tag-done">Era Peralihan</span>
+        <div class="t-card">
+          <h4>Berakhirnya Khilafah Utsmaniyah</h4>
+          <p>Berkuasanya pemerintahan-pemerintahan sekuler atas negeri-negeri Muslim menandai masuknya umat pada fase fitnah pemerintahan yang disebut dalam hadits tentang berturut-turutnya bentuk kepemimpinan menjelang akhir zaman. Meski bukan tanda yang disebut eksplisit dalam hadits, banyak ulama menautkan momentum ini dengan gambaran kemunduran umat menjelang datangnya tanda-tanda besar — dan kemunduran itu, sebagaimana digambarkan hadits, mengantarkan pada fase-fase akhir.</p>
+          <span class="t-src">Konteks sejarah — dikaitkan sebagian ulama</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">✦</div>
+<!-- ============ 03 ERA KITA ============ -->
+<section id="era-kita">
+  <div class="wrap">
+    <p class="eyebrow reveal">03 — Era Kita</p>
+    <h2 class="section-title reveal">Tanda Kecil yang Sedang Merajalela</h2>
+    <p class="lead reveal r1">Hari ini umat manusia berada di tengah gelombang tanda-tanda kecil (<em>asyrath shughra</em>) yang muncul satu demi satu tanpa jeda panjang, lalu digantikan tanda berikutnya. Dalam hadits-hadits shahih, Rasulullah saw. memberikan puluhan isyarat tentang era menjelang kiamat — dan hampir semuanya tampak nyata dalam kehidupan hari ini.</p>
+    <div class="prose reveal r1">
+      <p>Daftar berikut bukan berarti setiap tanda terpenuhi dengan sempurna pada setiap tempat dan waktu. Namun ketika digabungkan, mereka membentuk potret zaman yang sangat mirip dengan gambaran akhir zaman yang beliau sampaikan lebih dari 1.400 tahun silam. Inilah era yang oleh sebagian ulama disebut sebagai zaman "di leher kiamat" — bukan karena besok kiamat, melainkan karena sejarah manusia sudah tiba di babak-babak pamungkasnya.</p>
+    </div>
+    <div class="sign-grid">
+      <div class="sign reveal"><span class="s-num">01</span><h4>Ilmu Dicabut, Kebodohan Merajalela</h4><p>Ilmu dicabut dari bumi dengan wafatnya para ulama satu per satu, hingga orang-orang jahil memberi fatwa tanpa dasar — dan mereka pun tersesat serta menyesatkan.</p></div>
+      <div class="sign reveal r1"><span class="s-num">02</span><h4>Zina Meluas dan Dinormalisasi</h4><p>Perzinaan — yang disebutkan hadits sebagai tanda kiamat — tidak hanya terjadi, tetapi dibanggakan, dipublikasikan, dan dianggap hal yang wajar di banyak kalangan.</p></div>
+      <div class="sign reveal r2"><span class="s-num">03</span><h4>Khamr dan Zat Memabuk Liar</h4><p>Minuman keras membludak dalam ribuan bentuk dan nama baru, persis seperti gambaran hadits bahwa orang-orang akan mencari selingan memabuk dengan berbagai cara.</p></div>
+      <div class="sign reveal r3"><span class="s-num">04</span><h4>Musik dan Hiburan Merajalela</h4><p>Rasulullah saw. memberitakan akan ada orang-orang dari umatnya yang menghalalkan alat musik, lagu, dan pelacuran — kondisi yang hari ini mudah disaksikan di mana-mana.</p><span class="s-src">HR. Bukhari</span></div>
+      <div class="sign reveal"><span class="s-num">05</span><h4>Pembunuhan Meningkat Drastis</h4><p>"Tidak akan berdiri kiamat hingga pembunuhan bertambah banyak, hingga tidak diketahui lagi siapa yang membunuh dan siapa yang terbunuh."</p><span class="s-src">HR. Muslim</span></div>
+      <div class="sign reveal r1"><span class="s-num">06</span><h4>Gempa dan Bencana Beruntun</h4><p>Gempa bumi bertambah sering terjadi, sebagaimana kabar Rasulullah saw. bahwa menjelang akhir zaman gempa akan mengalir seperti manik-manik yang tali'nya terpotong.</p><span class="s-src">HR. Ahmad</span></div>
+      <div class="sign reveal r2"><span class="s-num">07</span><h4>Amanah Hilang</h4><p>"Jika amanah telah dibuang, maka tunggulah kiamat." Kepercayaan rusak di semua lini — keluarga, pekerjaan, pemerintahan, bahkan di antara teman sendiri.</p><span class="s-src">HR. Bukhari</span></div>
+      <div class="sign reveal r3"><span class="s-num">08</span><h4>Waktu Terasa Pendek</h4><p>"Tidak akan berdiri kiamat hingga waktu menghampiri: setahun terasa seperti sebulan, sebulan seperti sepekan, dan sepekan seperti menyala kemenyan."</p><span class="s-src">HR. Bukhari</span></div>
+      <div class="sign reveal"><span class="s-num">09</span><h4>Gedung Tinggi dan Gengsi</h4><p>Dalam hadits Jibril, tanda kiamat disebutkan: gembala tak bertuah bersaing membangun gedung-gedung tinggi — fenomena yang hari ini menjadi kebanggaan dan ajang pamer.</p><span class="s-src">HR. Muslim</span></div>
+      <div class="sign reveal r1"><span class="s-num">10</span><h4>Para Pendusta Kenabian</h4><p>"Kiamat tidak akan berdiri hingga muncul ±30 pendusta, semuanya mengklaim sebagai utusan Allah" — klaim-klaim kenabian palsu merajalela menjelang Dajjal.</p><span class="s-src">HR. Muslim</span></div>
+      <div class="sign reveal r2"><span class="s-num">11</span><h4>Fitnah Bertubi-Tubi</h4><p>Fitnah datang lalu menghampiri seperti gelap malam: seseorang pagi hari mukmin, sorenya kafir — hati-hati terjual oleh dunia hingga lupa akhirat.</p><span class="s-src">HR. Bukhari &amp; Muslim</span></div>
+      <div class="sign reveal r3"><span class="s-num">12</span><h4>Berlomba Membangun Masjid</h4><p>"Kiamat tidak akan berdiri hingga manusia berlomba-lomba membangun masjid" — megah dan mewah, sementara hak-hak dan kualitas imannya jauh tertinggal.</p><span class="s-src">HR. Abu Dawud</span></div>
+    </div>
+
+    <div class="note-card reveal">
+      <h3>Berapa Tahun Lagi Kiamat Datang?</h3>
+      <p>Pertanyaan ini telah ditanyakan sejak 1.400 tahun silam. Dalam beberapa riwayat disebutkan bahwa umur dunia diibaratkan seperti tujuh hari — sebagaimana tujuh hari penciptaan langit dan bumi — dan kita kini berada pada <strong>"hari yang ketujuh, di waktu sore harinya"</strong>. Jika ibarat tujuh hari ini ditakar menjadi ±7.000 tahun, maka sebagian ulama menghitung usia dunia saat ini telah menembus kisaran tahun <strong>ke-6.400-an</strong>. Artinya, menurut hitungan tersebut, dunia sudah melewati lebih dari 90% dari "umurnya".</p>
+      <p>Namun para ulama menegaskan: perhitungan ini <strong>bukan penanggalan</strong>. Riwayat tersebut memiliki celah periwayatan dan tidak boleh dijadikan keyakinan atau dasar menetapkan tanggal. Bahkan ada hadits bahwa kiamat tidak akan berdiri kecuali atas "sejahat-jahat manusia" — artinya boleh jadi lebih cepat dari dugaan siapa pun. Yang shahih dan pasti hanyalah sabda beliau: sejarah manusia sesungguhnya sudah memasuki babak pamungkas sejak beliau diutus.</p>
+      <div class="arabic">إِنَّ اللَّهَ عِندَهُ عِلْمُ السَّاعَةِ وَيُنَزِّلُ الْغَيْثَ وَيَعْلَمُ مَا فِي الْأَرْحَامِ</div>
+      <p style="text-align:right;font-size:12.5px;color:var(--faint);font-style:italic">"Sesungguhnya Allah saja yang memiliki ilmu hari Kiamat, Dia menurunkan hujan dan mengetahui isi rahim..." — QS. Luqman: 34</p>
+      <p class="caveat">Catatan penting: seluruh angka dan estimasi pada halaman ini bersifat ilustratif, bersumber dari riwayat dan ijtihad ulama — bukan penanggalan yang pasti. Tidak ada satu pun makhluk yang mengetahui kapan hari kiamat.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider">✦</div>
+
+<!-- ============ 04 TANDA BESAR ============ -->
+<section id="tanda-besar">
+  <div class="wrap">
+    <p class="eyebrow reveal">04 — Masa Depan</p>
+    <h2 class="section-title reveal">Sepuluh Tanda Besar Akhir Zaman</h2>
+    <p class="lead reveal r1">Dari Hudzaifah bin Asid radhiyallahu 'anhu, Rasulullah saw. bersabda: "Kiamat tidak akan berdiri hingga kalian melihat sebelumnya sepuluh tanda." Beliau lantas menyebutkan asap, dabbah, matahari terbit dari barat, turunnya Nabi Isa, Ya'juj dan Ma'juj, tiga kali tanah merosot — di timur, barat, dan Jazirah Arab — api yang keluar dari laut Yaman, serta tiupan sangkakala (HR. Muslim). Di sampingnya, hadits-hadits lain menegaskan dua peristiwa pembuka yang paling agung: kemunculan Al-Mahdi dan Dajjal.</p>
+    <div class="prose reveal r1">
+      <p>Berikut urutan yang lazim disusun para ulama berdasarkan kumpulan hadits. Sebagian terjadi berurutan yang jelas, sebagian dapat berlangsung bersamaan; yang pasti, setelah tanda kesepuluh ini, tirai dunia akan segera digulung. Inilah "tahun-tahun yang akan datang" yang tidak diketahui waktunya oleh seorang pun — namun gambarannya sudah diberikan dengan sangat rinci.</p>
+    </div>
+    <div class="big-grid">
+      <div class="big reveal" data-n="01">
+        <h4>Munculnya Al-Mahdi</h4>
+        <span class="b-ar">يَمْلَأُ الْأَرْضَ عَدْلًا وَقِسْطًا</span>
+        <p>Ketika dunia dipenuhi kezaliman dan kezaliman, akan berdiri seorang pemimpin dari keturunan Rasulullah saw. yang bernama sesuai nama beliau. Ia memimpin umat selama tujuh hingga sembilan tahun, memenuhi bumi dengan keadilan sebagaimana ia dipenuhi kezaliman, dan bersama dengannya umat Islam diperkuat hingga kemenangan demi kemenangan terjadi. Ia adalah pembuka jalan bagi turunnya tanda-tanda terbesar.</p>
+        <span class="t-src">HR. Abu Dawud &amp; Ahmad</span>
+      </div>
+      <div class="big reveal r1" data-n="02">
+        <h4>Kemunculan Dajjal</h4>
+        <span class="b-ar">عَلَيْهِ كَاتِبٌ كَافِرٌ كَافِرٌ</span>
+        <p>Fitnah terbesar sejak penciptaan Adam hingga kiamat. Dajjal — buta satu mata, bergegas seperti awan berhembus angin — berkuasa selama empat puluh hari: hari pertama terasa seperti setahun, hari kedua seperti sebulan, sisanya seperti biasa. Ia menampilkan surga dan neraka palsu, dan hanya orang berilmu yang kokoh mampu menyelamatkan imannya. Ia tidak mampu memasuki Makkah dan Madinah.</p>
+        <span class="t-src">HR. Bukhari &amp; Muslim</span>
+      </div>
+      <div class="big reveal" data-n="03">
+        <h4>Turunnya Nabi Isa as.</h4>
+        <span class="b-ar">بِالْمَنَارَةِ الْبَيْضَاءِ بِمَشْرِقِ دِمَشْقَ</span>
+        <p>Beliau turun di menara putih di timur Damaskus, di antara dua orang yang mengganti baju perang. Maka mematahkanlah beliau salib, mematikan babi, menghapus jizyah, dan menghukum Dajjal di Pintu Ludd (Palestina). Di bawah kepemimpinannya bumi dipenuhi keadilan dan kelimongan, umat berkumpul pada satu agama, dan keamanan sedemikian lengkap hingga singa dan unta bercampur damai.</p>
+        <span class="t-src">HR. Muslim — turun ±40 tahun</span>
+      </div>
+      <div class="big reveal r1" data-n="04">
+        <h4>Terlepasnya Ya'juj dan Ma'juj</h4>
+        <span class="b-ar">وَحُلِّبَتْ يَأْجُوجُ وَمَأْجُوجُ</span>
+        <p>Bangsa perusak yang terbentengi oleh dhul Qarnain itu dilepaskan dari segala gunung. Mereka menghantam bumi dengan kekacauan, menguras air Teluk Tabariah, dan memaksa Nabi Isa beserta pengikutnya terkepung. Atas doa beliau, Allah menghancurkan mereka dalam satu malam dengan ulat di leher masing-masing hingga mati seperti bangkai satu unta, lalu hujan menghanyutkan mereka dan bumi kembali subur dan tenang.</p>
+        <span class="t-src">HR. Bukhari, Muslim &amp; QS. Al-Anbiya: 96</span>
+      </div>
+      <div class="big reveal" data-n="05">
+        <h4>Keluar Dabbatul Ardh</h4>
+        <span class="b-ar">أَخْرِجْنَا لَهُمْ دَابَّةً مِّنَ الْأَرْضِ تُكَلِّمُهُمْ</span>
+        <p>Sebuah binatang bumi keluar dan berbicara kepada manusia — penegasan bahwa manusia dahulu tidak yakin dengan ayat-ayat Allah. Dalam hadits disebutkan binatang ini membawa cincin Nabi Musa dan stempel Rasulullah saw.: wajah kaum mukmin menjadi terang benderang dengan cahayanya, dan wajah kaum kafir menjadi menghitam. Ini adalah pengumuman terakhir yang paling jelas sebelum pintu iman ditutup.</p>
+        <span class="t-src">QS. An-Naml: 82 &amp; HR. Ahmad</span>
+      </div>
+      <div class="big reveal r1" data-n="06">
+        <h4>Turunnya Asap (Ad-Dukhan)</h4>
+        <span class="b-ar">فَارْتَقِبْ يَوْمَ تَأْتِي السَّمَاءُ بِدُخَانٍ مُّبِينٍ</span>
+        <p>Langit yang biasanya jernih akan menyelimuti asap yang nyata, yang memenuhi antara langit dan bumi dan menutupi manusia — "ini azab yang menyakitkan" (QS. Ad-Dukhan: 10-11). Asap ini menjadi salah satu tanda yang disebut eksplisit dalam hadits sepuluh tanda besar, menandai mulai runtutnya peristiwa-peristiwa kosmik yang tak terelakkan.</p>
+        <span class="t-src">QS. Ad-Dukhan &amp; HR. Muslim</span>
+      </div>
+      <div class="big reveal" data-n="07">
+        <h4>Tiga Reruntuhan Besar (Khasf)</h4>
+        <span class="b-ar">خَسْفٌ بِالْمَشْرِقِ وَخَسْفٌ بِالْمَغْرِبِ وَخَسْفٌ بِجَزِيرَةِ الْعَرَبِ</span>
+        <p>Tiga kali tanah merosot dan menenggelamkan penghuninya: di timur, di barat, dan di Jazirah Arab. Bencana-bencana raksasa ini menjadi sanksi terakhir atas kezaliman dan kesombongan, sekaligus gelombang pengantar menuju tanda-tanda terakhir. Setelahnya, tak akan ada lagi periode keteraturan hidup seperti yang dikenal manusia selama ribuan tahun.</p>
+        <span class="t-src">HR. Muslim</span>
+      </div>
+      <div class="big reveal r1" data-n="08">
+        <h4>Matahari Terbit dari Barat</h4>
+        <span class="b-ar">لَا تَنْفَعُ نَفْسًا إِيمَانُهَا</span>
+        <p>Hukum alam terbalik: matahari — yang sejak penciptaan hanya terbit dari timur — terbit dari barat. Saat itulah pintu taubat ditutup: "Taubat tidak lagi bermanfaat bagi jiwa yang sebelumnya tidak beriman" (HR. Bukhari &amp; Muslim). Seluruh manusia akan beriman pada hari itu, namun terlambat — iman pada saat melihat tanda tidak lagi bernilai.</p>
+        <span class="t-src">HR. Bukhari &amp; Muslim</span>
+      </div>
+      <div class="big reveal" data-n="09">
+        <h4>Api dari Yaman</h4>
+        <span class="b-ar">نَارٌ تَخْرُجُ مِنْ قَاعِ الْبَحْرِ</span>
+        <p>Sebuah api keluar dari dasar laut di perairan Yaman yang mengumpulkan manusia dari timur dan barat menuju Syam. Api itu menyertai manusia di mana pun mereka berada — ketika tidur di malam hari maupun ketika terjaga di siang hari — hingga mereka dihimpun di tempat mahsyar. Inilah pengiring terakhir seluruh umat manusia sebelum tiupan sangkakala.</p>
+        <span class="t-src">HR. Muslim</span>
+      </div>
+      <div class="big reveal r1" data-n="10">
+        <h4>Tiupan Sangkakala Pertama</h4>
+        <span class="b-ar">وَنُفِخَ فِي الصُّورِ فَصَعِقَ مَن فِي السَّمَاوَاتِ وَمَن فِي الْأَرْضِ</span>
+        <p>Israfil alaihissalam telah siap dengan sangkakala sejak lama, kedua matanya menengadah menunggu perintah Allah (HR. Tirmidzi). Ketika perintah itu turun, alam semesta berakhir dalam sekejap: bintang-bintang berserakan, langit terbelah, gunung-gunung hancur berhamburan seperti kapas, dan seluruh makhluk pingsan — kecuali yang dikehendaki Allah. Tirai dunia tergulung untuk selamanya.</p>
+        <span class="t-src">HR. Muslim &amp; QS. Az-Zumar: 68</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">✦</div>
+<!-- ============ 05 HARI ITU ============ -->
+<section id="hari-itu">
+  <div class="wrap">
+    <p class="eyebrow reveal">05 — Hari Itu Sendiri</p>
+    <h2 class="section-title reveal">Kronologi Hari Terakhir Alam Semesta</h2>
+    <p class="lead reveal r1">Setelah tanda-tanda berlalu, datanglah hari itu sendiri. Berikut tahapan hari kiamat dari tiupan pertama hingga keputusan abadi — disusun dari ayat-ayat Al-Qur'an dan hadits-hadits shahih. Klik setiap tahap untuk menelusurinya.</p>
+    <div class="acc reveal r1">
+
+      <div class="acc-item open">
+        <button class="acc-head" type="button">
+          <span class="acc-num">01</span>
+          <span class="acc-title">Tiupan Pertama — Alam Runtuh</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <div class="q">وَنُفِخَ فِي الصُّورِ فَصَعِقَ مَن فِي السَّمَاوَاتِ وَمَن فِي الْأَرْضِ إِلَّا مَن شَاءَ اللَّهُ</div>
+            <span class="qt">"Dan sangkakala ditiup, maka seadanya penghuni langit dan bumi jatuh pingsan, kecuali yang dikehendaki Allah." — QS. Az-Zumar: 68</span>
+            <p>Dengan satu tiupan Israfil, kosmos yang telah berjalan miliaran tahun runtuh dalam sekejap. Bintang-bintang kehilangan cahaya dan berserakan, langit terbelah, lautan meluap dan terbakar, gunung-gunung berjalan lalu dihancurkan seberapa pun besarnya seperti bulu-bulu kapas yang berhamburan. Bumi diguncang dan ditumbangkan, sehingga "mengeluarkan isinya dan membuangnya" (QS. Az-Zalzalah).</p>
+            <p>Tidak ada yang mampu menghindar — jin, manusia, dan seluruh makhluk pingsan, kecuali yang dikehendaki Allah. Inilah akhir mutlak dari sejarah alam semesta; tidak ada lagi hari esok dalam kalender apa pun. Dari titik ini, waktu berpindah ke wilayah akhirat yang hukum-hukumnya sama sekali berbeda.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">02</span>
+          <span class="acc-title">Jeda Kehancuran — Empat Puluh Tahun</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <div class="q">لِّمَنِ الْمُلْكُ الْيَوْمَ ۘ لِلَّهِ الْوَاحِدِ الْقَهَّارِ</div>
+            <span class="qt">"Milik siapakah kerajaan hari ini? Milik Allah Yang Maha Esa, Yang Maha Mengatasi." — QS. Ghafir: 16</span>
+            <p>Dalam hadits Muslim disebutkan: "Di antara kedua tiupan itu adalah empat puluh." Ketika ditanyakan empat puluh apa, beliau menjawab "empat puluh tahun". Selama masa itu bumi dijadikan tanah datar yang sama sekali tak berbukit, tanpa hujan dan tanpa kehidupan.</p>
+            <p>Beberapa riwayat menjelaskan bahwa tidak ada yang tetap hidup kecuali yang dikehendaki Allah — hingga akhirnya nyawa para malaikat pun dicabut satu per satu hingga tersisa Allah semata, al-Hayyu al-Qayyum. Kemudian Allah berfirman: "Milik siapakah kerajaan hari ini?" — pertanyaan yang menjadikan seluruh makhluk hening dalam keagungan-Nya.</p>
+            <span class="t-src">HR. Muslim</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">03</span>
+          <span class="acc-title">Tiupan Kedua — Kebangkitan (Ba'ats)</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <div class="q">وَأُشْرِقَتِ الْأَرْضُ بِنُورِ رَبِّهَا وَوُضِعَ الْكِتَابُ وَجِيءَ بِالنَّبِيِّينَ وَالشُّهَدَاءِ</div>
+            <span class="qt">"Dan bumi disinari cahaya Tuhannya, ditampakkan kitab-kitab, dibawa para nabi dan saksi-saksi..." — QS. Az-Zumar: 69</span>
+            <p>Tiupan kedua menggetarkan tanah dan seluruh manusia dibangkitkan. Mereka keluar dari kubur tanpa alas kaki, telanjang, dan berlutut — "bagaimana keadaan manusia itu? Lahir dari perut ibunya, begitu pula ia lahir kembali." Perut bumi menyerahkan seluruh isinya, dan manusia keluar seperti belalai yang terbang menyebar (QS. Al-Qamar: 7) — laksana tumbuhan yang tumbuh semalam saja.</p>
+            <p>Cahaya Tuhan menyinari bumi yang hitam itu, dan untuk pertama kalinya setelah puluhan tahun keheningan, alam semesta yang baru terbentuk kembali berisi: seluruh manusia dari Nabi Adam hingga manusia terakhir, tanpa terkecuali satu jiwa pun, hadir untuk menghadap Rabb-nya.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">04</span>
+          <span class="acc-title">Padang Mahsyar — 50.000 Tahun</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <div class="q">فِي يَوْمٍ كَانَ مِقْدَارُهُ خَمْسِينَ أَلْفَ سَنَةٍ</div>
+            <span class="qt">"...pada hari yang kadarnya 50.000 tahun." — QS. Al-Ma'arij: 4</span>
+            <p>Matahari didekatkan kepada makhluk hingga jaraknya seperti satu mil (HR. Muslim). Manusia tenggelam dalam keringatnya masing-masing — sebagian hingga mata kaki, sebagian hingga lutut, sebagian hingga pinggang, dan sebagian hingga keringatnya memenuhi mulutnya — sedalam amal perbuatannya (HR. Muslim).</p>
+            <p>Selama waktu yang setara 50.000 tahun hitungan dunia itu, manusia tidak makan, tidak minum, dan hanya ditopang napas (HR. Bukhari &amp; Muslim). Mereka lalu bergegas dari satu nabi ke nabi lain — Adam, Nuh, Ibrahim, Musa, Isa — memohon syafaat, dan semuanya merujuk: "kepadaku, kepadaku". Maka Rasulullah saw. mengangkat kepala dan memulai syafaat kubra (HR. Bukhari &amp; Muslim). Padang Mahsyar bukan sekadar tempat berkumpul — ia ruang ujian terbesar dalam sejarah keberadaan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">05</span>
+          <span class="acc-title">Yaumul Hisab — Perhitungan Amal</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <p>Manusia berdiri untuk dihisab. "Siapa yang dibahasakan dengan perhitungan yang rinci, dia akan dihukum" (HR. Bukhari &amp; Muslim) — sedangkan yang dihisab dengan ringan, itulah orang-orang yang selamat. Kitab amal dibagikan: "Fa-amma man utiya kitabahu biyaminihi" — siapa yang menerima kitabnya dengan tangan kanan, dia berseru dengan bangga: "Bacalah kitabku!" (QS. Al-Haqqah: 19-20). Adapun siapa yang menerimanya dengan tangan kiri, dia berharap seandainya kitab itu tak pernah diberikan (QS. Al-Haqqah: 25).</p>
+            <p>Pada hari itu manusia melihat segala amalnya, sekecil mana pun — bahkan seberat atom. Lidah dibekukan menjadi saksi, kaki dan tangan memberi kesaksian (QS. Yaasin: 65; Fussilat: 20-21). Tidak ada satu pun percakapan, satu pun jalan yang dilalui kaki, satu pun detik yang luput dari catatan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">06</span>
+          <span class="acc-title">Mizan — Timbangan yang Adil</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <div class="q">وَنَضَعُ الْمَوَازِينَ الْقِسْطَ لِيَوْمِ الْقِيَامَةِ فَلَا تُظْلَمُ نَفْسٌ شَيْئًا</div>
+            <span class="qt">"Dan Kami akan memasang timbangan yang adil pada hari Kiamat, maka tidak seorang pun dirugikan." — QS. Al-Anbiya: 47</span>
+            <p>Semua amal — zahir dan batin, kata dan niat — ditimbang dengan keadilan mutlak yang tidak mungkin ditemukan di dunia. "Maka siapa yang berat timbangan (amalnya), mereka itulah orang-orang yang beruntung. Dan siapa yang ringan timbangan (amalnya), mereka itulah orang-orang yang merugikan dirinya sendiri karena mendustakan ayat-ayat Kami" (QS. Al-A'raf: 8-9).</p>
+            <p>Di titik ini tidak ada lagi tarik-menarik, tidak ada lagi jalan belok: angka timbangan adalah keputusan. Dari sinilah manusia terbelah dua kelompok besar, menuju dua perhentian yang tak akan pernah bertemu.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">07</span>
+          <span class="acc-title">Sirat &amp; Hawdh — Jembatan dan Kolam</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <p>Di atas Jahanam dipasang jembatan Sirat — lebih halus dari rambut dan lebih tajam dari pedang (HR. Muslim). Mukminin melintasinya sesuai amalnya: sebagian seperti kilat, sebagian seperti angin, sebagian berlari, sebagian berjalan, dan sebagian merangkak di atas tangan hingga akhirnya terseret ke tempatnya (HR. Bukhari &amp; Muslim). Setiap orang melewati sirat dengan cahaya sebesar amannya.</p>
+            <p>Sebelumnya, di padang mahsyar, Rasulullah saw. berdiri di Hawdh (kolam)-nya yang luasnya setara perjalanan sebulan, airnya lebih putih dari susu dan lebih manis dari madu; dan umatnya diambil darinya sebagaimana batu kertas diambil dari tungku — sebagian ada yang terhalang, sebagian ditembus (HR. Bukhari &amp; Muslim). Kolam itu adalah pertemuan pertama beliau dengan umatnya, sebelum perhentian yang lebih abadi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <button class="acc-head" type="button">
+          <span class="acc-num">08</span>
+          <span class="acc-title">Surga &amp; Neraka — Keputusan Abadi</span>
+          <span class="acc-chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <div class="acc-inner">
+            <div class="q">وَأُزِفَتِ الْجَنَّةُ لِلْمُتَّقِينَ غَيْرَ بَعِيدٍ</div>
+            <span class="qt">"Dan disediakanlah surga bagi orang-orang bertakwa, tidak jauh lagi." — QS. Qaf: 31</span>
+            <p>Surga didekatkan bagi orang-orang bertakwa, dan neraka dibolehkan dilihat oleh setiap orang (QS. An-Nazi'at: 36). Hari kiamat adalah Yaumul Jaza' — hari balasan yang berlaku selamanya: "Merekalah ahli surga, kekal di dalamnya selama-lamanya, sebagai balasan dari apa yang mereka kerjakan" — dan hal yang sama berlaku bagi ahli neraka.</p>
+            <p>Dari titik ini, "waktu" berhenti menjadi ukuran, sebab tidak ada lagi yang berakhir. Satu detik di timbangan mizan menentukan tempat yang tak akan pernah berganti — dan di situlah sejarah alam semesta benar-benar berpindah dari kesementaraan menuju kekekalan.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider">✦</div>
+
+<!-- ============ 06 PETA WAKTU ============ -->
+<section id="peta-waktu">
+  <div class="wrap">
+    <p class="eyebrow reveal">06 — Peta Waktu</p>
+    <h2 class="section-title reveal">Dari Masa ke Masa dalam Satu Garis</h2>
+    <p class="lead reveal r1">Seluruh penelusuran di atas, dirangkum dalam satu garis waktu — dari masa lampau yang telah terjadi, era yang sedang kita jalani, hingga masa depan yang waktunya Allah sendiri yang mengetahui.</p>
+    <div class="timeline">
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">±570 M</span><span class="t-tag tag-done">Masa Lampau</span><div class="t-card"><h4>Kelahiran Rasulullah saw.</h4><p>Gerbang akhir zaman dibuka. "Aku diutus bersama hari kiamat seperti dua jari ini."</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">610 M</span><span class="t-tag tag-done">Masa Lampau</span><div class="t-card"><h4>Wahyu pertama turun</h4><p>Era kenabian dimulai; ayat-ayat tentang akhir zaman terus disampaikan kepada umat.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">632 M</span><span class="t-tag tag-done">Masa Lampau</span><div class="t-card"><h4>Wafatnya Rasulullah saw.</h4><p>Babak tanda-tanda dimulai; sejarah memasuki kurun terakhirnya.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">1453 M</span><span class="t-tag tag-done">Masa Lampau</span><div class="t-card"><h4>Penaklukan Konstantinopel</h4><p>Nubuat "tanda kiamat yang pertama" dipenuhi oleh Muhammad Al-Fatih.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">1924 M</span><span class="t-tag tag-done">Era Peralihan</span><div class="t-card"><h4>Berakhirnya kekhalifahan</h4><p>Umat memasuki fase fitnah pemerintahan menjelang akhir zaman.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Kini</span><span class="t-tag tag-now">Era Kita</span><div class="t-card"><h4>Tanda-tanda kecil merajalela</h4><p>Amanah hilang, zina meluas, gempa beruntun, waktu terasa pendek — tanda-tanda kecil hadir bersamaan di sekitar kita.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Waktu tak diketahui</span><span class="t-tag tag-future">Masa Depan</span><div class="t-card"><h4>Al-Mahdi berdiri</h4><p>Dunia dipenuhi kezaliman, lalu dipenuhi keadilan di bawah kepemimpinannya selama 7–9 tahun.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Waktu tak diketahui</span><span class="t-tag tag-future">Masa Depan</span><div class="t-card"><h4>Dajjal keluar, Nabi Isa turun</h4><p>Fitnah terbesar menguasai bumi selama 40 hari; lalu Nabi Isa turun dan menghukumnya di Pintu Ludd.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Waktu tak diketahui</span><span class="t-tag tag-future">Masa Depan</span><div class="t-card"><h4>Ya'juj Ma'juj terlepas</h4><p>Kekacauan menyeluruh; lalu dimusnahkan dalam satu malam atas doa Nabi Isa.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Waktu tak diketahui</span><span class="t-tag tag-future">Masa Depan</span><div class="t-card"><h4>Tanda-tanda kosmik terakhir</h4><p>Dabbah keluar, asap menutupi langit, matahari terbit dari barat, api dari Yaman — pintu taubat tertutup.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Tak dapat diduga</span><span class="t-tag tag-eternal">Akhir Zaman</span><div class="t-card"><h4>Tiupan sangkakala pertama</h4><p>Alam semesta runtuh; diikuti jeda kehancuran selama ±40 tahun.</p></div></div>
+      <div class="t-item reveal"><span class="t-dot"></span><span class="t-year">Selamanya</span><span class="t-tag tag-eternal">Akhirat</span><div class="t-card"><h4>Kebangkitan hingga keputusan abadi</h4><p>Mahsyar 50.000 tahun, hisab, timbangan, sirat — lalu surga atau neraka, tempat yang tak akan pernah berganti.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">✦</div>
+<!-- ============ 07 REFLEKSI ============ -->
+<section id="refleksi">
+  <div class="wrap">
+    <p class="eyebrow reveal">07 — Penutup</p>
+    <h2 class="section-title reveal">Manusia di Leher Zaman</h2>
+    <div class="prose reveal r1">
+      <p>Jika digariswali dari keseluruhan penelusuran di atas, kiamat bukanlah peristiwa di masa depan yang jauh dan terabaikan — ia adalah <strong>arah, bukan titik</strong>. Sejak wafatnya Rasulullah saw., sejarah manusia resmi memasuki babak terakhirnya. Setiap generasi setelahnya hidup lebih dekat satu langkah dengan hari itu, dan generasi kita saat ini hidup di zaman ketika hampir seluruh tanda-tanda kecil telah tampak nyata di sekeliling.</p>
+      <p>Namun yang paling dekat sebenarnya bukanlah kiamat kubra, melainkan kiamat sugra — kematian. "Jika salah seorang dari kalian meninggal dunia, maka terpotonglah kiamatnya" (HR. Tirmidzi). Bagi jiwa yang wafat hari ini, kiamatnya adalah hari ini. Itulah sebabnya para ulama mengajak umat memandang akhir zaman bukan sebagai bahan tafsir tanggal, melainkan panggilan untuk siap: sejarah panjang kiamat pada akhirnya bermuara pada satu pertanyaan personal — <strong>siapkah bekal kita?</strong></p>
+    </div>
+    <div class="principles">
+      <div class="principle reveal">
+        <h4>Siapkan Bekal, Sampai Akhir</h4>
+        <p>"Jika kiamat berdiri sementara di tangan salah seorang dari kalian ada bibit kurma, maka tanamlah" (HR. Ahmad). Bekerja dan beramal tetap sampai akhir — tanpa putus asa, tanpa menunggu, tanpa manja pada zaman.</p>
+      </div>
+      <div class="principle reveal r1">
+        <h4>Jangan Tertipu Penanggalan</h4>
+        <p>Siapa pun yang mengklaim tahu tanggal kiamat — sekecil apa pun kemasannya — telah terjatuh pada yang ditegaskan Al-Qur'an: ilmu itu hanya milik Allah. Yang diperintahkan adalah memperbanyak istighfar dan amal, bukan menebak angka.</p>
+      </div>
+      <div class="principle reveal r2">
+        <h4>Manfaatkan Sebelum Terlambat</h4>
+        <p>"Manfaatkanlah lima sebelum lima: masa mudamu sebelum tua, sehatmu sebelum sakit, hartamu sebelum miskin, waktumu senggang sebelum sibuk, dan hidupmu sebelum mati." (HR. Al-Hakim)</p>
+      </div>
+    </div>
+    <div class="closing-quote reveal">
+      <div class="q-ar">بُعِثْتُ أَنَا وَالسَّاعَةُ كَهَاتَيْنِ</div>
+      <p>"Aku diutus bersama hari kiamat, sebagaimana dua jari ini berdempetan." — HR. Bukhari &amp; Muslim</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>Sumber Primer</h5>
+        <p>Disusun dari sumber-sumber otentik berikut:</p>
+        <ul>
+          <li>Al-Qur'anul Karim — Al-A'raf 187, Luqman 34, Ghafir 16, Az-Zumar 68-69, Al-Ma'arij 4, Ad-Dukhan, An-Naml 82, Al-Anbiya 96, Al-Haqqah, Az-Zalzalah, Al-Qamar 7, Qaf 31</li>
+          <li>Sahih al-Bukhari &amp; Sahih Muslim — hadits tanda-tanda kiamat, tiupan sangkakala, mahsyar, dan hisab</li>
+          <li>Sunan Abu Dawud, Tirmidzi, Ibnu Majah &amp; Musnad Ahmad — kemunculan Al-Mahdi, Dajjal, dan tanda-tanda kecil</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Rujukan Ulama</h5>
+        <ul>
+          <li>Ibnu Katsir — <em>An-Nihayah fil Fitan wal Malahim</em></li>
+          <li>Al-Barzanji — <em>Al-Isha'ah li Asyrathis Sa'ah</em></li>
+          <li>Yusuf al-Wabil — <em>Asyrathus Sa'ah</em></li>
+          <li>Tahqiq Syaikh Al-Albani atas riwayat-riwayat terkait</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Sejarah Panjang Hari Kiamat · Disusun dari Al-Qur'an &amp; Hadits · 2026</span>
+      <span>Tidak ada yang mengetahui waktunya kecuali Allah Subhanahu wa Ta'ala</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Kembali ke atas"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3M8 3L3.5 7.5M8 3l4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Bintang di langit hero ---------- */
+  var canvas = document.getElementById("stars");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (canvas && canvas.getContext) {
+    var ctx = canvas.getContext("2d");
+    var W, H, stars = [], meteors = [];
+
+    function resize(){
+      W = canvas.width = canvas.offsetWidth * (window.devicePixelRatio || 1);
+      H = canvas.height = canvas.offsetHeight * (window.devicePixelRatio || 1);
+      build();
+    }
+    function build(){
+      stars = [];
+      var count = Math.min(220, Math.floor(W * H / 9000));
+      for (var i = 0; i < count; i++){
+        stars.push({
+          x: Math.random() * W,
+          y: Math.random() * H,
+          r: (Math.random() * 1.4 + 0.3) * (window.devicePixelRatio || 1),
+          p: Math.random() * Math.PI * 2,
+          s: 0.008 + Math.random() * 0.02,
+          gold: Math.random() < 0.22
+        });
+      }
+    }
+    function spawnMeteor(){
+      meteors.push({
+        x: Math.random() * W * 0.8 + W * 0.15,
+        y: Math.random() * H * 0.3,
+        dx: -(4 + Math.random() * 4) * (window.devicePixelRatio || 1),
+        dy: (2.2 + Math.random() * 2.4) * (window.devicePixelRatio || 1),
+        life: 1
+      });
+    }
+    function frame(){
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < stars.length; i++){
+        var st = stars[i];
+        st.p += st.s;
+        var a = 0.35 + Math.abs(Math.sin(st.p)) * 0.6;
+        ctx.beginPath();
+        ctx.arc(st.x, st.y, st.r, 0, Math.PI * 2);
+        ctx.fillStyle = st.gold ? "rgba(232,196,104," + a + ")" : "rgba(255,255,255," + (a * 0.85) + ")";
+        ctx.fill();
+      }
+      for (var m = meteors.length - 1; m >= 0; m--){
+        var mt = meteors[m];
+        mt.x += mt.dx; mt.y += mt.dy; mt.life -= 0.016;
+        if (mt.life <= 0){ meteors.splice(m, 1); continue; }
+        var grad = ctx.createLinearGradient(mt.x, mt.y, mt.x - mt.dx * 14, mt.y - mt.dy * 14);
+        grad.addColorStop(0, "rgba(245,217,139," + (0.9 * mt.life) + ")");
+        grad.addColorStop(1, "rgba(245,217,139,0)");
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 1.6 * (window.devicePixelRatio || 1);
+        ctx.beginPath();
+        ctx.moveTo(mt.x, mt.y);
+        ctx.lineTo(mt.x - mt.dx * 14, mt.y - mt.dy * 14);
+        ctx.stroke();
+      }
+      if (!reduce) requestAnimationFrame(frame);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    if (reduce){ frame(); } else {
+      frame();
+      setInterval(function(){ if (Math.random() < 0.55) spawnMeteor(); }, 3200);
+      setTimeout(spawnMeteor, 1400);
+    }
+  }
+
+  /* ---------- Animasi muncul saat digulir ---------- */
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add("visible"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -30px 0px" });
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("visible"); });
+  }
+
+  /* ---------- Bar progres baca ---------- */
+  var bar = document.getElementById("progressBar");
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    if (bar) bar.style.width = pct + "%";
+    if (toTop) toTop.classList.toggle("show", h.scrollTop > 600);
+  }
+
+  /* ---------- Akordeon kronologi ---------- */
+  var items = document.querySelectorAll(".acc-item");
+  items.forEach(function(item){
+    var head = item.querySelector(".acc-head");
+    var body = item.querySelector(".acc-body");
+    if (item.classList.contains("open")){
+      body.style.maxHeight = body.scrollHeight + "px";
+    }
+    head.addEventListener("click", function(){
+      var isOpen = item.classList.contains("open");
+      items.forEach(function(other){
+        other.classList.remove("open");
+        other.querySelector(".acc-body").style.maxHeight = null;
+      });
+      if (!isOpen){
+        item.classList.add("open");
+        body.style.maxHeight = body.scrollHeight + "px";
+      }
+    });
+  });
+  window.addEventListener("resize", function(){
+    items.forEach(function(item){
+      if (item.classList.contains("open")){
+        var b = item.querySelector(".acc-body");
+        b.style.maxHeight = b.scrollHeight + "px";
+      }
+    });
+  });
+
+  /* ---------- Tombol ke atas ---------- */
+  var toTop = document.getElementById("toTop");
+  if (toTop) toTop.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  });
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
